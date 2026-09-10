@@ -1,0 +1,15 @@
+numpy
+scipy
+pandas
+biopython
+torch>=2.6.0
+pytorch-lightning
+omegaconf
+hydra-core
+tqdm
+beartype
+jaxtyping
+dm-tree
+statsmodels
+patsy
+scikit-learn
