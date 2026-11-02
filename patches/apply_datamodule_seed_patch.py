@@ -1,5 +1,5 @@
 """
-Applies patch 1 from README.md: adds a configurable seed to the training
+Applies patch 1 described in the top-level README: adds a configurable seed to the training
 data loader's length-batcher construction.
 
 Run once, from the training package's root directory:

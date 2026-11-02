@@ -1,17 +1,14 @@
 """
-verify_loocv_knot_leakage.py -- Directly tests the reviewer's concern:
-were spline knots computed once using all 82 targets (leaking each
-held-out target's log(length) into its own fold's basis), or does
-refitting knots strictly within each LOOCV fold change the result?
+verify_loocv_knot_leakage.py -- Tests whether refitting the spline knots
+strictly within each LOOCV fold changes the result, compared with knots
+computed once from all 82 targets (which lets each held-out target's
+log(length) enter its own fold's basis).
 
-Runs BOTH versions and reports both LOOCV RMSE values side by side:
+Runs both versions and reports both LOOCV RMSE values side by side:
   (A) "pooled-knot" LOOCV: knots computed once from all 82 targets
-      (matches the current manuscript's reported 0.3609 / 0.3567 if
-      this is what was actually done)
   (B) "fold-knot" LOOCV: for each fold, knots computed using only the
       81 training targets, then that exact basis applied to the held-
-      out target -- the strict out-of-sample procedure the reviewer
-      recommends
+      out target -- the strict out-of-sample procedure
 
 Requires patsy (pip install patsy --break-system-packages if missing).
 
@@ -134,24 +131,12 @@ def main():
     print()
 
     print("=" * 70)
-    print("COMPARISON TO MANUSCRIPT'S REPORTED VALUES (0.3609 / 0.3567)")
+    print("COMPARISON WITH THE PRIMARY ANALYSIS (0.3609 / 0.3567)")
     print("=" * 70)
-    print(f"  (A) Pooled-knot Model 0 vs manuscript 0.3609: "
-          f"diff = {rmse0_a - 0.3609:+.4f}")
-    print(f"  (A) Pooled-knot Model 1 vs manuscript 0.3567: "
-          f"diff = {rmse1_a - 0.3567:+.4f}")
-    print(f"  (B) Fold-safe  Model 0 vs manuscript 0.3609: "
-          f"diff = {rmse0_b - 0.3609:+.4f}")
-    print(f"  (B) Fold-safe  Model 1 vs manuscript 0.3567: "
-          f"diff = {rmse1_b - 0.3567:+.4f}")
-    print()
-    print("If (A) closely matches the manuscript's reported values, the "
-          "current results used pooled (all-82) knot placement. If (B) "
-          "differs meaningfully from (A), knot leakage materially "
-          "affects the result and the manuscript needs updating with "
-          "the fold-safe numbers. If (A) and (B) are close, the "
-          "leakage was real but did not change the substantive "
-          "conclusion -- state that explicitly.")
+    print(f"  (A) Pooled-knot Model 0: diff = {rmse0_a - 0.3609:+.4f}")
+    print(f"  (A) Pooled-knot Model 1: diff = {rmse1_a - 0.3567:+.4f}")
+    print(f"  (B) Fold-safe  Model 0: diff = {rmse0_b - 0.3609:+.4f}")
+    print(f"  (B) Fold-safe  Model 1: diff = {rmse1_b - 0.3567:+.4f}")
 
 
 if __name__ == "__main__":

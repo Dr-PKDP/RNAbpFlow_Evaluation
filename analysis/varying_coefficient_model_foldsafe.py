@@ -111,13 +111,12 @@ def main():
     ci_a = np.percentile(boot_means_a, [2.5, 97.5])
 
     print("=" * 70)
-    print("(A) ORIGINAL (pooled knots/center/aux-model, current manuscript)")
+    print("(A) Pooled knots, centring value and auxiliary model")
     print("=" * 70)
     print(f"  LOOCV RMSE, constant-coefficient: {rmse_main_a:.4f}")
     print(f"  LOOCV RMSE, varying-coefficient:  {rmse_vc_a:.4f}")
     print(f"  Mean squared-error diff: {d_a.mean():.5f}")
     print(f"  95% bootstrap interval: [{ci_a[0]:.4f}, {ci_a[1]:.4f}]")
-    print(f"  (manuscript currently reports: [-0.0108, 0.0518])")
     print()
 
     # Fold-safe version

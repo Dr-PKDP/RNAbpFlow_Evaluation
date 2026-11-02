@@ -1,0 +1,197 @@
+pdb_id,chain,release_date,method,resolution_A,status,resolved_residues,D_A,E_A,duplicate_of
+10ZT,A,2026-05-27,EM,2.9,included in cohort (82),96,10.899,20.4909,
+10ZU,A,2026-05-27,EM,4.0,included in cohort (82),96,10.9062,21.4685,
+12CI,A,2026-05-13,X-ray,2.59,included in cohort (82),82,10.2684,21.7925,
+23JY,A,2026-05-06,X-ray,2.8,included in cohort (82),20,0.2384,17.2742,
+23JZ,A,2026-05-06,X-ray,2.9,included in cohort (82),35,0.5828,2.923,
+23KA,A,2026-05-06,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),35,0.9137,2.7935,23jz_A
+37CM,A,2026-08-05,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",145,,,
+37CN,A,2026-08-26,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",220,,,
+37CO,A,2026-08-26,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",259,,,
+37CP,A,2026-08-26,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",246,,,
+37SO,A,2026-08-19,EM,3.1,included in cohort (82),165,13.3786,25.2048,
+8K0Y,A,2025-01-15,X-ray,2.28,included in cohort (82),50,2.5583,4.6714,
+8K1E,A,2025-01-15,X-ray,2.23,included in cohort (82),57,3.6947,5.2876,
+8K2Z,A,2025-01-15,X-ray,2.4,included in cohort (82),57,3.3366,6.1446,
+8K30,A,2025-01-15,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),52,5.2851,5.5727,8k0y_A
+8K7W,A,2025-01-29,X-ray,2.24,included in cohort (82),49,1.0927,12.5087,
+8K85,A,2025-02-12,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",195,,,
+8KEB,A,2025-02-19,X-ray,2.2,included in cohort (82),71,10.5251,12.1946,
+8KED,A,2025-02-19,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,10.3061,11.182,8keb_A
+8KHH,A,2025-02-26,X-ray,2.3,included in cohort (82),71,11.6588,12.6673,
+8SYK,A,2025-02-19,X-ray,3.06,included in cohort (82),107,12.9109,23.2001,
+8T5O,A,2025-02-19,EM,2.98,included in cohort (82),111,15.1885,23.1849,
+8TKJ,A,2025-02-19,EM,,excluded: exact-sequence duplicate of an earlier chain (69),111,13.6575,22.5477,8t5o_A
+8TKK,A,2025-02-19,EM,,excluded: exact-sequence duplicate of an earlier chain (69),107,12.8733,23.3784,8syk_A
+8VQV,A,2025-06-11,X-ray,2.43,included in cohort (82),64,3.283,7.1931,
+8VVJ,A,2025-06-11,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",218,,,
+8VXX,A,2025-02-19,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",233,,,
+8VXZ,A,2025-02-19,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",219,,,
+8VY0,A,2025-02-19,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",215,,,
+8VY1,A,2025-02-19,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",216,,,
+8X9K,A,2025-03-12,EM,2.63,included in cohort (82),727,9.6289,44.192,
+8X9M,A,2025-03-12,EM,,excluded: exact-sequence duplicate of an earlier chain (69),722,9.6078,44.8443,8x9k_A
+8X9O,A,2025-03-12,EM,3.06,included in cohort (82),751,9.6112,43.4988,
+8X9Q,A,2025-03-12,EM,3.04,included in cohort (82),727,9.9002,43.9029,
+8XTQ,A,2025-02-12,EM,2.96,included in cohort (82),746,9.6988,44.6585,
+8XTS,A,2025-02-12,EM,2.54,included in cohort (82),732,9.8784,45.0814,
+8Z8Q,A,2025-03-19,X-ray,3.01,included in cohort (82),69,9.7619,11.1816,
+8Z8U,A,2025-03-19,X-ray,2.71,included in cohort (82),41,1.2873,13.1485,
+9CFN,A,2025-07-16,X-ray,2.9,included in cohort (82),55,3.9926,14.5976,
+9CXF,A,2025-01-29,EM,3.02,included in cohort (82),200,11.4383,30.708,
+9DE8,A,2025-03-12,X-ray,2.76,included in cohort (82),56,1.1976,4.2143,
+9DIB,A,2025-04-09,X-ray,2.68,included in cohort (82),95,15.1496,24.6789,
+9DID,A,2025-04-09,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),95,16.2166,26.2248,9dib_A
+9DIG,A,2025-04-09,EM,3.22,included in cohort (82),96,14.0394,26.0375,
+9DII,A,2025-04-09,EM,,excluded: exact-sequence duplicate of an earlier chain (69),92,14.5459,26.4857,9dib_A
+9E73,A,2025-11-05,EM,3.0,included in cohort (82),204,20.4405,30.1141,
+9E74,A,2025-11-05,EM,3.0,included in cohort (82),249,29.415,32.8691,
+9E75,A,2025-11-05,EM,3.5,included in cohort (82),155,13.4775,25.6279,
+9E9Q,A,2025-07-09,X-ray,3.33,included in cohort (82),101,9.7042,12.4692,
+9ELY,A,2025-04-23,EM,2.9,included in cohort (82),202,20.7009,30.46,
+9G4J,A,2025-11-05,EM,3.74,included in cohort (82),241,25.3727,42.2018,
+9HRD,A,2026-01-14,X-ray,2.5,included in cohort (82),67,1.794,14.832,
+9HRF,A,2026-01-14,X-ray,1.6,included in cohort (82),70,2.6281,14.4432,
+9HRG,A,2026-01-14,X-ray,2.05,included in cohort (82),68,1.8145,14.8832,
+9I9W,AAA,2025-09-24,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",106,,,
+9IF0,AAA,2025-09-24,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",30,,,
+9IF1,AAA,2025-09-24,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",121,,,
+9ISV,A,2025-03-19,EM,3.07,included in cohort (82),351,15.3101,49.5611,
+9IWF,A,2025-06-04,X-ray,2.06,included in cohort (82),69,11.5692,14.3197,
+9IWG,A,2025-06-04,X-ray,2.48,included in cohort (82),69,11.9743,13.3307,
+9J3T,A,2025-03-19,EM,,excluded: exact-sequence duplicate of an earlier chain (69),519,19.2669,59.0671,9isv_A
+9J4N,A,2025-07-09,X-ray,2.9,included in cohort (82),81,6.277,12.2434,
+9J4O,A,2025-07-09,X-ray,2.5,included in cohort (82),87,5.9504,12.9118,
+9J6P,A,2025-01-15,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",127,,,
+9J6Y,A,2025-03-19,EM,3.25,included in cohort (82),496,19.3865,53.8474,
+9J9X,N,2026-03-04,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",230,,,
+9JA7,A,2025-09-03,X-ray,2.59,included in cohort (82),33,0.8536,4.7209,
+9JA9,A,2025-09-03,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),33,0.9846,4.7839,9ja7_A
+9JC8,N,2026-03-04,EM,3.75,included in cohort (82),382,28.6973,44.9159,
+9K9G,A,2026-04-22,EM,3.38,included in cohort (82),334,29.2983,40.8578,
+9K9H,A,2026-04-22,EM,,excluded: exact-sequence duplicate of an earlier chain (69),334,28.5804,40.8714,9k9g_A
+9K9J,A,2026-04-22,EM,3.46,included in cohort (82),251,29.0748,37.5629,
+9K9K,A,2026-04-22,EM,3.45,included in cohort (82),249,27.9428,37.0968,
+9KGG,U,2025-11-12,EM,3.12,included in cohort (82),267,28.3096,39.3542,
+9KGH,U,2025-11-12,EM,3.3,included in cohort (82),264,23.0105,34.4022,
+9KPH,A,2025-03-19,EM,3.93,included in cohort (82),249,24.5275,40.4176,
+9KPO,A,2025-03-19,EM,,excluded: exact-sequence duplicate of an earlier chain (69),249,24.6796,39.3644,9kph_A
+9LCR,A,2025-03-19,EM,2.6,included in cohort (82),362,16.8125,39.6578,
+9LE3,A,2025-09-10,EM,2.75,included in cohort (82),498,23.4121,51.5575,
+9LE5,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),498,25.0743,51.2642,9le3_A
+9LE6,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),498,24.4861,51.9067,9le3_A
+9LEC,J,2025-09-10,EM,2.51,included in cohort (82),336,26.6875,39.7186,
+9LEE,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),336,26.6173,39.6382,9lec_J
+9LEL,J,2025-09-10,EM,2.98,included in cohort (82),434,24.9248,51.9615,
+9LEM,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),434,23.1778,52.0432,9lel_J
+9LHK,G,2025-09-10,EM,2.93,included in cohort (82),787,6.6965,72.2516,
+9LHL,A,2025-09-10,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",268,,,
+9LJN,A,2025-11-26,X-ray,2.75,included in cohort (82),71,10.6458,15.2074,
+9LKC,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,13.6451,16.5055,9ljn_A
+9LKE,A,2025-11-26,X-ray,2.26,included in cohort (82),70,11.6443,14.2139,
+9LKF,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,12.1764,14.9128,9ljn_A
+9LMC,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,12.8896,16.2578,9ljn_A
+9LMF,A,2025-03-19,EM,3.93,included in cohort (82),317,13.2291,43.2364,
+9M78,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),498,24.2645,51.5498,9le3_A
+9M79,A,2025-09-10,EM,,excluded: exact-sequence duplicate of an earlier chain (69),498,24.8216,50.1941,9le3_A
+9MCW,A,2025-04-23,EM,2.9,included in cohort (82),308,18.83,35.5871,
+9MDW,A,2025-05-14,X-ray,1.421,included in cohort (82),16,0.1722,14.919,
+9MEE,A,2025-04-30,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",194,,,
+9MFH,A,2025-09-24,X-ray,2.7,included in cohort (82),76,1.9359,21.4896,
+9MM6,A,2025-06-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),494,20.2825,54.232,9isv_A
+9MME,U,2025-06-04,EM,2.93,included in cohort (82),521,19.1255,52.7586,
+9MMG,c,2025-06-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),463,13.8083,59.4962,9isv_A
+9MQS,A,2025-04-30,EM,3.1,included in cohort (82),243,25.5761,28.8171,
+9MQT,A,2025-04-30,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",87,,,
+9MQU,A,2025-04-30,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",193,,,
+9N3I,A,2026-07-29,EM,2.86,included in cohort (82),230,29.0187,34.3194,
+9N3J,A,2026-08-05,EM,,excluded: exact-sequence duplicate of an earlier chain (69),230,28.8914,34.1112,9n3i_A
+9NA1,A,2026-03-04,EM,3.51,included in cohort (82),88,9.463,27.9801,
+9NA7,A,2026-03-04,EM,3.56,included in cohort (82),94,10.066,26.4062,
+9NAK,A,2026-03-04,EM,3.67,included in cohort (82),156,18.6942,24.651,
+9NAM,A,2026-03-04,EM,2.87,included in cohort (82),68,15.1805,29.9035,
+9NAP,A,2026-03-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),82,13.8374,25.4852,9nam_A
+9NAS,A,2026-03-04,EM,2.72,included in cohort (82),97,12.5014,28.8497,
+9NBC,A,2026-03-04,EM,2.87,included in cohort (82),63,10.6798,18.1683,
+9NBH,A,2026-03-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),88,10.6888,29.1587,9nbc_A
+9NDD,A,2026-03-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),160,20.5535,27.8144,9nbc_A
+9NDV,A,2026-03-04,EM,2.92,included in cohort (82),67,10.5075,17.6581,
+9NDW,A,2026-03-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),91,10.8654,27.9269,9ndv_A
+9NDX,A,2026-03-04,EM,,excluded: exact-sequence duplicate of an earlier chain (69),162,18.5385,27.8057,9ndv_A
+9OV3,A,2026-05-20,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",41,,,
+9OV6,A,2026-05-20,EM,3.46,included in cohort (82),417,28.4123,45.8566,
+9OV7,A,2026-05-20,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.1003,45.0142,9ov6_A
+9OV8,A,2026-05-20,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",223,,,
+9OVB,A,2026-05-20,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.9883,46.1902,9ov6_A
+9OVC,A,2026-05-20,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.2674,45.5081,9ov6_A
+9OY2,A,2026-05-20,EM,3.14,included in cohort (82),417,25.1633,46.0331,
+9OY3,A,2026-05-20,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,25.4227,45.6107,9oy2_A
+9OY4,A,2026-05-20,EM,3.11,included in cohort (82),417,24.451,47.5268,
+9QTJ,1,2026-02-18,EM,3.79,included in cohort (82),461,27.522,40.6802,
+9QU7,A,2026-02-25,EM,2.6,included in cohort (82),297,28.0481,37.1983,
+9V4U,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,11.9185,15.2796,9ljn_A
+9V4X,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,12.3782,16.5492,9ljn_A
+9V4Y,A,2025-11-26,X-ray,,excluded: exact-sequence duplicate of an earlier chain (69),71,13.9538,16.9938,9ljn_A
+9V50,A,2025-11-26,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",54,,,
+9V7N,B,2026-03-25,EM,3.11,included in cohort (82),205,27.2619,32.3017,
+9V7O,B,2026-03-25,EM,,excluded: exact-sequence duplicate of an earlier chain (69),205,28.1016,31.3953,9v7n_B
+9V7P,B,2026-03-25,EM,3.01,included in cohort (82),207,26.8447,34.3477,
+9V7Q,B,2026-03-25,EM,3.27,included in cohort (82),203,23.4915,35.1824,
+9VMZ,A,2026-07-01,X-ray,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",132,,,
+9X6B,B,2026-03-25,EM,2.86,included in cohort (82),201,22.4602,35.2239,
+9YDI,A,2026-08-05,X-ray,1.03,included in cohort (82),12,0.2123,8.9486,
+9ZDV,A,2026-05-13,EM,3.3,included in cohort (82),417,26.1657,46.6112,
+9ZF2,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,28.4704,47.3646,9ov6_A
+9ZF3,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",212,,,
+9ZF5,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",197,,,
+9ZF9,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",135,,,
+9ZFC,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.5208,48.5373,9ov6_A
+9ZFD,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.9471,47.2423,9ov6_A
+9ZGM,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,29.7142,47.7272,9ov6_A
+9ZGN,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.0811,49.5301,9ov6_A
+9ZGO,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.8656,49.0721,9ov6_A
+9ZGP,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.7666,48.4311,9ov6_A
+9ZGQ,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,24.1952,48.6772,9zdv_A
+9ZGR,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",285,,,
+9ZGS,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",294,,,
+9ZGT,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,25.9516,47.0576,9zdv_A
+9ZGU,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,28.8523,48.1422,9ov6_A
+9ZGV,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.6143,46.7382,9ov6_A
+9ZGW,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.8531,50.1518,9ov6_A
+9ZGX,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",268,,,
+9ZGY,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,28.5624,46.7204,9ov6_A
+9ZGZ,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",231,,,
+9ZH0,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,24.1188,47.9542,9zdv_A
+9ZH1,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.1265,48.4101,9zdv_A
+9ZH2,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,24.7799,48.3276,9zdv_A
+9ZH5,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",247,,,
+9ZH7,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.6156,48.9999,9ov6_A
+9ZH9,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",138,,,
+9ZHA,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",122,,,
+9ZHB,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.1339,47.0631,9zdv_A
+9ZHC,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.9884,48.9313,9ov6_A
+9ZHD,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",53,,,
+9ZHE,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",262,,,
+9ZHF,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,28.9322,47.4322,9ov6_A
+9ZHG,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,23.7176,47.5967,9zdv_A
+9ZHI,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,25.9149,47.6742,9zdv_A
+9ZHJ,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",153,,,
+9ZHK,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.0074,48.5707,9ov6_A
+9ZHL,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",134,,,
+9ZHO,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.2443,48.2244,9zdv_A
+9ZHP,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",126,,,
+9ZHR,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,28.672,46.8311,9ov6_A
+9ZHS,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.9932,47.3078,9ov6_A
+9ZHT,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.5189,49.1387,9ov6_A
+9ZHU,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.4537,47.382,9ov6_A
+9ZHV,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.8007,47.2112,9zdv_A
+9ZHW,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",210,,,
+9ZHX,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",81,,,
+9ZHZ,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",145,,,
+9ZI0,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,27.2885,47.163,9ov6_A
+9ZI2,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",161,,,
+9ZI3,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",69,,,
+9ZI4,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.3104,46.7345,9zdv_A
+9ZI5,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",151,,,
+9ZI6,A,2026-05-13,EM,,excluded: exact-sequence duplicate of an earlier chain (69),417,26.1809,48.1224,9ov6_A
+9ZI7,A,2026-05-13,EM,,"excluded: mmCIF-only, not processed by the coordinate pipeline (45)",24,,,

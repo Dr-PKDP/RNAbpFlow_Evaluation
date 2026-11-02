@@ -226,8 +226,8 @@ def build_ss_onehot(bp_file: Path, sequence: str, first_resnum: int) -> dict:
     # reproduces canonical pairing (channel 0) but does not fully
     # recover the original non-canonical channel distinction, which
     # could not be determined from the released training artifacts.
-    # See featurization/README.md for the empirical precision/recall
-    # characteristics of this approximation.
+    # The approximation has 100% precision and roughly 79-95% recall
+    # relative to the reference channels (see the top-level README).
     all_pairs = build_matrix(None)
     ss = np.stack([canonical, all_pairs, all_pairs], axis=-1)
 

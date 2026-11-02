@@ -2,13 +2,13 @@
 extract_paired_diffs.py -- Computes the per-target paired LOOCV
 differences d_i = e0i^2 - e1i^2 (Model 0 vs Model 1 squared out-of-fold
 residuals), the actual underlying quantity whose mean and bootstrap
-interval are already reported in the manuscript (Equation 3). This is
+interval are already reported (Equation 3). This is
 needed to build a distribution plot for Figure 4 (showing the real
 spread of d_i across targets, not just two summary bars), rather than
 guessing at what the distribution looks like.
 
 Uses the SAME 4-df restricted cubic spline / LOOCV procedure already
-verified against the manuscript's reported values (0.3609 / 0.3567),
+verified against the reported values (0.3609 / 0.3567),
 so the output here is guaranteed consistent with the primary result.
 
 Usage (run from backbones/rnabpflow/):
@@ -55,7 +55,7 @@ def main():
 
     rmse0 = np.sqrt(np.mean(e0**2))
     rmse1 = np.sqrt(np.mean(e1**2))
-    print(f"Sanity check -- should match manuscript's 0.3609 / 0.3567:")
+    print(f"Sanity check -- should match 0.3609 / 0.3567:")
     print(f"  Model 0 LOOCV RMSE: {rmse0:.4f}")
     print(f"  Model 1 LOOCV RMSE: {rmse1:.4f}")
     print(f"  Mean d_i: {d.mean():.4f} (should match ~0.0031)")

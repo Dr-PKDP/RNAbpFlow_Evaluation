@@ -7,7 +7,8 @@ treating such near-duplicate structures as independent observations
 inflates effective sample size and biases downstream statistics.
 
 Groups results by exact sequence and keeps one representative per
-unique sequence.
+unique sequence (the alphabetically first target). Also writes
+duplicate_of.json, which maps each excluded duplicate to the retained target.
 
 Usage:
     python dedupe_cohort.py <results.json> <metadata.json>
@@ -53,12 +54,20 @@ def main() -> None:
     cluster_sizes = sorted([len(v) for v in clusters.values()], reverse=True)
     print(f"Largest cluster sizes: {cluster_sizes[:10]}")
 
-    deduped = [sorted(members, key=lambda r: r["target"])[0]
-               for members in clusters.values()]
+    deduped = []
+    duplicate_of = {}
+    for members in clusters.values():
+        members = sorted(members, key=lambda r: r["target"])
+        deduped.append(members[0])
+        for m in members[1:]:
+            duplicate_of[m["target"]] = members[0]["target"]
 
     with open("dispersion_error_results_deduped.json", "w") as f:
         json.dump(deduped, f, indent=2)
+    with open("duplicate_of.json", "w") as f:
+        json.dump(duplicate_of, f, indent=2, sort_keys=True)
     print(f"\nWrote dispersion_error_results_deduped.json ({len(deduped)} independent targets)")
+    print(f"Wrote duplicate_of.json ({len(duplicate_of)} duplicates mapped to their retained target)")
 
 
 if __name__ == "__main__":

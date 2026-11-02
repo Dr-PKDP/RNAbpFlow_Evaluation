@@ -1,5 +1,5 @@
 """
-Applies patch 2 from README.md: disables deterministic per-sample
+Applies patch 2 described in the top-level README: disables deterministic per-sample
 seeding in the inference dataset, required for genuinely independent
 repeated samples (e.g. Monte Carlo dropout).
 

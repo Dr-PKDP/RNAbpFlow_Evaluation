@@ -92,13 +92,13 @@ if __name__ == "__main__":
     print(f"N = {len(length)}\n")
 
     print("=== Stability check: does the result stabilize as B increases? ===")
-    for n_boot in [200, 500, 1000, 2000]:
+    for n_boot in [500, 1000, 2000, 4000]:
         r = run_out_of_bootstrap(length, dispersion, error, n_boot=n_boot, seed=0)
         print(f"  B={n_boot}: mean={r['mean_improvement_pct']:.3f}%, "
               f"SD={r['sd_improvement_pct']:.3f}%, CI={r['ci_95_pct']}")
 
     print()
-    print("=== Final result at B=2000 ===")
-    final = run_out_of_bootstrap(length, dispersion, error, n_boot=2000, seed=0)
+    print("=== Final result at B=4000 ===")
+    final = run_out_of_bootstrap(length, dispersion, error, n_boot=4000, seed=0)
     for k, v in final.items():
         print(f"  {k}: {v}")
