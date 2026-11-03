@@ -36,7 +36,7 @@ Python dependencies are in `requirements.txt`. Featurization needs the RNAbpFlow
 1. **data_curation/**: `cutoff_feasibility.py`, `scan_modified_nucleotides.py`, `fetch_auth_chains.py`, `build_external_cohort.py`.
 2. **featurization/**: `build_training_pkl.py`, `batch_build_training_set.py`.
 3. **patches/**: apply `apply_datamodule_seed_patch.py` and `apply_dataset_seed_patch.py` before training or inference (see below).
-4. **inference/**: `prep_external_inputs.py` (writes `map1.npy` to `map3.npy` per target with the base-pair map generator, which runs MXfold2, SimFold and CONTRAfold; its path is set at the top of the script), `run_mc_dropout_inference.py` (20 samples per target), `download_ground_truth.py`.
+4. **inference/**: `prep_external_inputs.py` (writes `map1.npy` to `map3.npy` per target by calling `generate_bp_maps.py`, also in this directory) and `generate_bp_maps.py` (runs MXfold2, SimFold and CONTRAfold and writes map1 from MXfold2, map2 from SimFold and map3 from CONTRAfold, in that fixed order; edit the tool paths near the top of the file to match your own MXfold2/SimFold/CONTRAfold installation), `run_mc_dropout_inference.py` (20 samples per target), `download_ground_truth.py`.
 5. **analysis/**:
    - Dispersion and error: `analyze_dispersion_vs_error.py` (residue pairing by sequence alignment), then `dedupe_cohort.py` (exact-sequence deduplication; also writes `duplicate_of.json`).
    - Primary comparison: `bootstrap_ci.py`, `nested_spline_model.py`, `paired_loocv_test.py`, `verify_loocv_knot_leakage.py`, `extract_paired_diffs.py`, `df_sensitivity.py`, `repeated_kfold.py`.

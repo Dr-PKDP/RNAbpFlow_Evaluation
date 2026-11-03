@@ -17,7 +17,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-BPMAPS_SCRIPT = "/opt/bpmaps/generate_bp_maps.py"
+BPMAPS_SCRIPT = str(Path(__file__).resolve().parent / "generate_bp_maps.py")
 INPUTS_DIR = Path("Inputs")
 PER_TARGET_TIMEOUT_SECONDS = 180
 
