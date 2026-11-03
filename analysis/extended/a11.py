@@ -1,8 +1,8 @@
 import sys,time; sys.path.insert(0,".")
-from lib import *; from bund import get,gt; from metrics import *
+from lib import *; from bund import get,gt,Z; from metrics import *
 d=load(); T=d.target.tolist(); t0=time.time(); rows=[]
 for t in T:
-    X=get(t,"primary"); G=gt(t); tm=[tm_score(x,G) for x in X]; ld=[lddt(x,G) for x in X]; cf=[contact_f1(x,G) for x in X]
+    X=get(t,"primary"); G=gt(t); tm=[tm_score(x,G) for x in X]; ld=[lddt(x,G) for x in X]; cf=[contact_f1(x,G,idx=Z[f"{t}__pred_idx"]) for x in X]
     rows.append(dict(target=t,tm=np.mean(tm),lddt=np.mean(ld),f1=np.mean(cf)))
 m=pd.DataFrame(rows); m.to_json("a11_metrics.json",orient="records"); print("time %.0fs"%(time.time()-t0))
 d=d.merge(m,on="target")

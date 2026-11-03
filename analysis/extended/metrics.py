@@ -41,8 +41,15 @@ def lddt(X,Y,R0=15.0,th=(0.5,1,2,4)):
     sc=np.mean([ (diff<t) for t in th],axis=0)
     per=np.array([ (sc[i][m[i]].mean() if m[i].any() else np.nan) for i in range(len(Y))])
     return np.nanmean(per)
-def contact_f1(X,Y,cut=12.0,minsep=4):
-    n=len(Y); i,j=np.triu_indices(n,minsep)
+def contact_f1(X,Y,cut=12.0,minsep=4,idx=None):
+    """Contact F1 over C4' pairs closer than `cut` A. `idx` holds the positions of the paired
+    residues in the deposited sequence; sequence separation is applied to these positions, so
+    unresolved residues do not shorten the separation. Without idx the array order is used."""
+    n=len(Y)
+    if idx is None:
+        i,j=np.triu_indices(n,minsep)
+    else:
+        i,j=np.triu_indices(n,1); keep=(np.asarray(idx)[j]-np.asarray(idx)[i])>=minsep; i,j=i[keep],j[keep]
     dY=np.linalg.norm(Y[i]-Y[j],axis=1)<cut; dX=np.linalg.norm(X[i]-X[j],axis=1)<cut
     tp=(dY&dX).sum(); p=tp/max(dX.sum(),1); r=tp/max(dY.sum(),1)
     return 2*p*r/(p+r) if p+r>0 else 0.0

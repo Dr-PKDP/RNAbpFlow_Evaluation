@@ -19,6 +19,10 @@ import pandas as pd
 import patsy
 import statsmodels.api as sm
 
+# Default: linear interpolation at level ceil((n+1)(1-alpha))/n, which is never below the rank-k order
+# statistic. Set EXACT_ORDER_STATISTIC = True (or pass --exact) for the rank-k order statistic itself.
+EXACT_ORDER_STATISTIC = "--exact" in sys.argv
+
 
 def fit_model(log_length_train, log_dispersion_train, log_error_train,
                spline_df=4, include_dispersion=True):
@@ -59,7 +63,8 @@ def one_split(log_length, log_dispersion, log_error, error, alpha, rng, include_
     cal_scores = np.abs(log_error[cal_idx] - pred_cal)
     n_c = len(cal_idx)
     q_level = min(np.ceil((n_c + 1) * (1 - alpha)) / n_c, 1.0)
-    q_hat = np.quantile(cal_scores, q_level)
+    q_hat = (np.sort(cal_scores)[int(round(q_level * n_c)) - 1] if EXACT_ORDER_STATISTIC
+             else np.quantile(cal_scores, q_level))
 
     pred_test = predict_with(model, basis_info, columns, log_length[test_idx],
                                log_dispersion[test_idx], include_dispersion)
@@ -94,7 +99,7 @@ def run_three_way(length, dispersion, error, alpha=0.1, n_splits=200, seed=0):
 
 
 if __name__ == "__main__":
-    with open(sys.argv[1]) as f:
+    with open([a for a in sys.argv[1:] if not a.startswith('--')][0]) as f:
         data = json.load(f)
     length = np.array([d["length"] for d in data])
     dispersion = np.array([d["dispersion"] for d in data])
