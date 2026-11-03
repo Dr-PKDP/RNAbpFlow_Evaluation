@@ -1,4 +1,5 @@
-import sys,json; sys.path.insert(0,".")
+import sys,json,os; sys.path.insert(0,".")
+sys.path.insert(0,os.path.join(os.path.dirname(os.path.abspath(__file__)),".."))
 from lib import *
 from varying_coefficient_model_foldsafe import loocv_varying_coefficient_foldsafe as vc
 d=load(); out={}
